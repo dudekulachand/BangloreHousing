@@ -14,7 +14,7 @@ jobs:
       # Check-out your repository.
       - name : echo tags
         run: |
-          echo "Tag name does not match ${{ github.event.release.tag_name }}"
+          echo "git tags >--- ${{ github.event.release.tag_name }}"
 
       - name: Checkout
         uses: actions/checkout@v2
