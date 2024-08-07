@@ -30,4 +30,4 @@ jobs:
            context: .
            file: ./Dockerfile
            push: true
-           tags: ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:v1.1
+           tags: ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:${{ github.event.base_ref }}
