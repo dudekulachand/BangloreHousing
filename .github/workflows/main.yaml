@@ -33,5 +33,5 @@ jobs:
           scripts: |
             docker stop pipe || true
             docker rm pipe || true
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:v3
-            docker run -d --name pipe -p 5000:5000 ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:v3
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:v4
+            docker run -d --name pipe -p 5000:5000 ${{ secrets.DOCKERHUB_USERNAME }}/flaskapp:v4
