@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: echo name
-        run : echo "Hari"
+        run : echo "ubuntu"
       -  name: Login to Docker Hub
          uses: docker/login-action@v3
          with:
